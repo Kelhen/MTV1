@@ -2,7 +2,8 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/prop">Prop</router-link>
+      <router-link to="/prop">Prop</router-link> |
+      <router-link to="/provide">Provide/Inject</router-link>
     </div>
     <router-view/>
   </div>

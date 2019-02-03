@@ -6,12 +6,15 @@
 
 
 <script>
-import Tweet from '../components/prop/Tweet.vue'
+import Tweet from '../components/provide/Tweet.vue'
 
 export default {
   name: 'Prop',
   components: {
     Tweet,
+  },
+  provide: {
+    author: 'Elon'
   },
   data() {
     return {

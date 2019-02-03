@@ -15,6 +15,11 @@ export default new Router({
       path: '/prop',
       name: 'prop',
       component: () => import(/* webpackChunkName: "about" */ './views/Prop.vue')
+    },
+    {
+      path: '/provide',
+      name: 'provide',
+      component: () => import(/* webpackChunkName: "about" */ './views/Provide.vue')
     }
   ]
 })
