@@ -1,7 +1,7 @@
 <template>
   <div>
     <Tweet v-for="tweet in tweets" :key="tweet" :msg="tweet"/>
-    <new-tweet v-model="newTweet"/>
+    <new-tweet @postTweet="postTweet"/>
   </div>
 </template>
 
@@ -19,8 +19,12 @@ export default {
   data() {
     return {
       tweets: ['Hello word', 'my second tweet'],
-      newTweet: '',
     };
+  },
+  methods: {
+    postTweet(newTweet) {
+      this.tweets.push(newTweet)
+    },
   }
 }
 </script>

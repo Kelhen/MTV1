@@ -1,16 +1,23 @@
 <template>
-  <div><input type="text-area" row="5" max="280"> {{ total }} / 280 <button @click="save()">Tweet!</button></div>
+  <div>
+    <p>{{newTweet}}</p>
+    <input type="text-area" row="5" max="280" v-model="newTweet"> {{ total }} / 280
+    <button @click="postTweet()">Tweet!</button>
+  </div>
 </template>
 
 <script>
 export default {
   name: 'Tweet',
-  props: {
-    newTweet: String
+  data() {
+    return {
+      newTweet: '',
+    };
   },
   methods: {
-    save() {
-      this.$emit('value', this.newTweet);
+    postTweet() {
+      this.$emit('postTweet', this.newTweet);
+      this.newTweet = '';
     }
   },
   computed: {
