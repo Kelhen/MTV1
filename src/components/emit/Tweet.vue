@@ -1,5 +1,7 @@
 <template>
-  <div>test: {{ msg }} <button @click="deleteTweet()">delete</button></div>
+  <div>{{ msg }}
+    <button @click="deleteTweet()">delete</button>
+  </div>
 </template>
 
 <script>

@@ -2,7 +2,8 @@
   <div>
     <Tweet
       v-for="tweet in tweets"
-      :key="tweet" :msg="tweet"/>
+      :key="tweet"
+      :msg="tweet"/>
   </div>
 </template>
 

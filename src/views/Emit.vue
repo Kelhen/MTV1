@@ -1,6 +1,9 @@
 <template>
   <div>
-    <Tweet v-for="(tweet, index) in tweets" :key="index" :msg="tweet" @delete="deleteTweet(index)"/>
+    <Tweet v-for="(tweet, index) in tweets"
+      :key="index"
+      :msg="tweet"
+      @delete="deleteTweet(index)"/>
   </div>
 </template>
 
