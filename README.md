@@ -1,6 +1,6 @@
 # MTV1
 
-Code exemple for the event MTV [MTV Meetups Tokyo Vue.js](http://meetu.ps/c/4ct0x/Byn60/f)
+Code exemple for the event MTV [MTV Meetups Tokyo Vue.js](http://meetu.ps/e/GhYkp/Byn60/f)
 
 
 ## Project setup
