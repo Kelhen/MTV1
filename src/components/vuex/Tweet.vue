@@ -1,6 +1,5 @@
 <template>
-  <div>{{ msg }} by {{ author }}</div>
-
+  <div>{{ msg }}</div>
 </template>
 
 <script>
@@ -8,7 +7,6 @@ export default {
   name: 'Tweet',
   props: {
     msg: String
-  },
-  inject: ['author'],
+  }
 }
 </script>

@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
 
 Vue.use(Router)
 
@@ -9,17 +8,47 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: () => import('./views/Home.vue')
     },
     {
       path: '/prop',
       name: 'prop',
-      component: () => import(/* webpackChunkName: "about" */ './views/Prop.vue')
+      component: () => import('./views/Prop.vue')
     },
     {
       path: '/provide',
       name: 'provide',
-      component: () => import(/* webpackChunkName: "about" */ './views/Provide.vue')
+      component: () => import('./views/Provide.vue')
+    },
+    {
+      path: '/children',
+      name: 'children',
+      component: () => import('./views/Children.vue')
+    },
+    {
+      path: '/emit',
+      name: 'emit',
+      component: () => import('./views/Emit.vue')
+    },
+    {
+      path: '/parent',
+      name: 'parent',
+      component: () => import('./views/Parent.vue')
+    },
+    {
+      path: '/v-model',
+      name: 'v-model',
+      component: () => import('./views/V-model.vue')
+    },
+    {
+      path: '/vuex',
+      name: 'vuex',
+      component: () => import('./views/Vuex.vue')
+    },
+    {
+      path: '/event-bus',
+      name: 'event-bus',
+      component: () => import('./views/Event-Bus.vue')
     }
   ]
 })
