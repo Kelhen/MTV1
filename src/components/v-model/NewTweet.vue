@@ -1,7 +1,7 @@
 <template>
   <div>
     <p>{{newTweet}}</p>
-    <input type="text-area" row="5" max="280" v-model="newTweet"> {{ total }} / 280
+    <textarea type="text-area" rows="5" max="280" placeholder="Tweet the words.. almost :P" v-model="newTweet"/><br> {{ total }} / 280
     <button @click="postTweet()">Tweet!</button>
   </div>
 </template>
