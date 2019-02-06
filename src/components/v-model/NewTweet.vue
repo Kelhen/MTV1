@@ -1,14 +1,20 @@
 <template>
   <div>
     <p>{{newTweet}}</p>
-    <textarea type="text-area" rows="5" max="280" placeholder="Tweet the words.. almost :P" v-model="newTweet"/><br> {{ total }} / 280
+    <textarea
+      type="text-area"
+      rows="5"
+      max="280"
+      placeholder="Tweet the words.. almost :P"
+      v-model="newTweet"/>
+    {{ total }} / 280
     <button @click="postTweet()">Tweet!</button>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Tweet',
+  name: 'v-model',
   data() {
     return {
       newTweet: '',

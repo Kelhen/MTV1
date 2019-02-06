@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'Tweet',
+  name: 'vuex-child',
   props: {
     msg: String
   }

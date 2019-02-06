@@ -5,7 +5,7 @@
 
 <script>
 export default {
-  name: 'Tweet',
+  name: 'provide-child',
   props: {
     msg: String
   },

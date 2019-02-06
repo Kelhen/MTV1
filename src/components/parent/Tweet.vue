@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'Tweet',
+  name: 'parent-child',
   props: {
     msg: String,
     index: Number

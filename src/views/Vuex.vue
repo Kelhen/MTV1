@@ -10,7 +10,7 @@
 import Tweet from '../components/Tweet.vue'
 
 export default {
-  name: 'Prop',
+  name: 'Vuex',
   components: {
     Tweet,
   },

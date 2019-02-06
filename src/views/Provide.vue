@@ -12,7 +12,7 @@
 import Tweet from '../components/provide/Tweet.vue'
 
 export default {
-  name: 'Prop',
+  name: 'Provide',
   components: {
     Tweet,
   },

@@ -6,7 +6,7 @@
 import EventBus from '../../event-bus.js';
 
 export default {
-  name: 'Tweet',
+  name: 'event-bus-child',
   props: {
     msg: String,
     index: Number

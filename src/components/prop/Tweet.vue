@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'Tweet',
+  name: 'prop-child',
   props: {
     msg: String
   }

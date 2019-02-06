@@ -9,7 +9,7 @@
 import Tweet from '../components/parent/Tweet.vue'
 
 export default {
-  name: 'Prop',
+  name: 'Parent',
   components: {
     Tweet,
   },
