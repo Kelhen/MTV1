@@ -1,5 +1,7 @@
 <template>
-  <div>{{ msg }} ({{ index + 1}}/{{ totalTweets }}) <button @click="deleteTweet()">delete</button></div>
+  <div>{{ msg }} ({{ index + 1}}/{{ totalTweets }})
+    <button @click="deleteTweet()">delete</button>
+  </div>
 </template>
 
 <script>
@@ -17,8 +19,6 @@ export default {
   computed: {
     totalTweets () {
       return this.$parent.tweets.length;
-      console.log(this.$parent.tweets);
-
     }
   }
 }
